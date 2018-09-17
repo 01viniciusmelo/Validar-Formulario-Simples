@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Validação de formulário</title>
+
+    <!-- Bootstrap -->
+    <link href="_bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Meu Estilo CSS -->
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    
+    <div class="container">
+      <div class="row">
+        <!-- esquerda -->
+        <div class="col-sm-4"></div>
+        
+        <!-- meio -->
+        <div class="col-sm-4" id="areaFormulario">
+          <div class="row">
+          
+            <h1>Cadastrar-se</h1>
+
+            <form action="#" method="Post" id="formCadastro">
+              <!-- Nome -->
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="form-group">
+                    <input type="text" name="nome" id="txtNome" placeholder="Nome" class="form-control">
+                  </div><!-- /form-group -->
+                </div><!-- /row -->
+              </div><!-- /col-sm-6 -->
+              <!-- Sobrenome -->
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="form-group campoDireito">
+                    <input type="text" name="sobrenome" id="txtSobrenome" placeholder="Sobrenome" class="form-control">
+                  </div><!-- /form-group -->
+                </div><!-- /row -->
+              </div><!-- /col-sm-6 -->
+              <!-- E-mail -->
+              <div class="form-group">
+                <input type="email" name="email" id="txtEmail" placeholder="E-mail" class="form-control">
+              </div><!-- /form-gorup -->
+              <!-- Senha -->
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="form-group">
+                    <input type="password" name="senha" id="txtSenha" placeholder="Senha" class="form-control" maxlength="15">
+                  </div><!-- /form-group -->
+                </div><!-- /row -->
+              </div><!-- /col-sm-6 -->
+              <!-- Confirmar Senha -->
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="form-group campoDireito">
+                    <input type="password" name="confirmarSenha" id="txtConfirmarSenha" placeholder="Confirmar senha" class="form-control" maxlength="15">
+                  </div><!-- /form-group -->
+                </div><!-- /row -->
+              </div><!-- /col-sm-6 -->
+
+              <h5>Registrando-se, você concorda com os nossos <a href="#">termos de serviço.</a></h5>
+
+              <button type="submit" name="submit" class="btn btn-success" id="btn"><b>Cadastrar-se</b></button>
+
+            </form>
+
+          </div><!-- /row -->
+        </div><!-- /#areaFormulario -->
+
+        <!-- direita -->
+        <div class="col-sm-4"></div>
+
+      </div><!-- /row -->
+    </div><!-- /container -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="_bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Meu Script JS -->
+    <script type="text/javascript" src="_js/script.js"></script>
+
+  </body>
+</html>
